@@ -1,6 +1,6 @@
 var otpGenerator = require('otp-generator');//otp generator
 var nodemailer = require('nodemailer');
-const data = require('./usermodel');//importing usermodel
+const data = require('../model/usermodel');//importing usermodel
 const auth = require('./auth');
 const operationObject = {};
 const customerDetails = {
