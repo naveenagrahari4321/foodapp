@@ -4,7 +4,7 @@ var home = require("./routes/home");
 var home = require("./routes/restaurant");
 
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended:true}));
 
 app.use('/',home);
 app.use('/api/restaurant',home);
